@@ -1,6 +1,8 @@
 # ppo-car-unity
 
-[mlss](mlss.mp4)
+<video controls>
+  <source src="doc/mlss.mp4" type="video/mp4">
+</video>
 
 ## Overview
 This is a tech demo for Reinforcement Learning on unity to move a car to the goal.
@@ -30,11 +32,16 @@ pip install mlagents
 - (optional: change Behacior Type to "Inference Only" to make sure it's not start learning)
 
 ### Tensorboard
-```cmd    
+- run this on another cmd window
+```cmd
 tensorboard --logdir results
 ```
 
-[tensorboard screenshot](doc/backward_eye.png)
+example output:
+![tensorboard screenshot](doc/backward_eye.png)
+
+- 🟢 backward raycast off
+- 🟠 backward raycast on
 
 ### Remarks
 - check `Edit > Project Settings > Player > Settings for Windows, Mac, Linux > Resolution and Presentation > Resolution > Run in Background` or your agent stops when you focus away
